@@ -1,11 +1,11 @@
 <html>
 
 <head>
-    <title>Каталог игр</title>
+    <title>Каталог книг</title>
 </head>
 
 <body>
-    <h2>Каталог игр</h2>
+    <h2>Каталог книг</h2>
     <table border="1" cellpadding="5" cellspacing="1" width="100%">
         <tr>
             <th>Жанр</th> 
@@ -15,7 +15,7 @@
         </tr>
         <?php
             require_once "connect.pg.inc.php";
-            $sql = "SELECT * FROM games";
+            $sql = "SELECT * FROM books";
             $sta = $pdo->query($sql);
             while ($row = $sta->fetch(PDO::FETCH_ASSOC)) {
         ?>
